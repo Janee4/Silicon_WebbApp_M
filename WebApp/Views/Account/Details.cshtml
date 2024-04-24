@@ -7,11 +7,11 @@
 
 <section class="account-details">
     <div class="container">
-        
+
         <aside>
             <partial name="~/Views/Account/_AccountProfile.cshtml" />
         </aside>
-        
+
         <div class="content">
             @if (!string.IsNullOrEmpty(TempData["StatusMessage"]?.ToString()))
             {
@@ -21,6 +21,7 @@
             }
 
             <form class="form-basic" method="post" asp-action="UpdateBasicInfo" asp-controller="Account">
+                <h3>Account Details</h3>
                 <h5>Basic Info</h5>
                 <div class="form-content">
                     <div id="form-firstname" class="input-group">

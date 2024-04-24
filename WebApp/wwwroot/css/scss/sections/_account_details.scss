@@ -1,6 +1,87 @@
-﻿namespace WebApp.wwwroot.css.scss.sections
-{
-    public class _account_details
-    {
+﻿.account-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        
+
+        img {
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Gör bilden rund */
+        }
+
+        h5 {
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #6366F1;
+        }
+
+        .btn {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        form {
+            max-width: 500px;
+            margin-bottom: 20px;
+
+            h3, h5 {
+                color: #6366F1;
+                margin-bottom: 15px;
+            }
+
+            .form-content {
+                .input-group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    label {
+                        flex: 1;
+                        margin-right: 20px;
+                    }
+
+                    input, textarea {
+                        flex: 2;
+                    }
+                }
+                /* Anpassa första och sista raden */
+                .input-group:first-child, .input-group:nth-child(2) {
+                    flex-direction: row; /* Låt fälten ligga bredvid varandra */
+
+                    label, input, textarea {
+                        flex: 1; /* Ge varje element lika mycket utrymme */
+                    }
+                }
+            }
+
+            .buttons-div {
+                display: flex;
+                justify-content: space-between;
+
+                .btn {
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }

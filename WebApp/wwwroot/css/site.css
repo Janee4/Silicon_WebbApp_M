@@ -1,4 +1,5 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+﻿@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 *, *::before, *::after {
   font-optical-sizing: auto;
   font-weight: 400;
@@ -22,6 +23,126 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+.account-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.account-details .container {
+  display: flex;
+  align-items: center;
+}
+.account-details .container img {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Gör bilden rund */
+}
+.account-details .container h5 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.account-details .container p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #6366F1;
+}
+.account-details .container .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.account-details .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.account-details .content form {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.account-details .content form h3, .account-details .content form h5 {
+  color: #6366F1;
+  margin-bottom: 15px;
+}
+.account-details .content form .form-content {
+  /* Anpassa första och sista raden */
+}
+.account-details .content form .form-content .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.account-details .content form .form-content .input-group label {
+  flex: 1;
+  margin-right: 20px;
+}
+.account-details .content form .form-content .input-group input, .account-details .content form .form-content .input-group textarea {
+  flex: 2;
+}
+.account-details .content form .form-content .input-group:first-child, .account-details .content form .form-content .input-group:nth-child(2) {
+  flex-direction: row; /* Låt fälten ligga bredvid varandra */
+}
+.account-details .content form .form-content .input-group:first-child label, .account-details .content form .form-content .input-group:first-child input, .account-details .content form .form-content .input-group:first-child textarea, .account-details .content form .form-content .input-group:nth-child(2) label, .account-details .content form .form-content .input-group:nth-child(2) input, .account-details .content form .form-content .input-group:nth-child(2) textarea {
+  flex: 1; /* Ge varje element lika mycket utrymme */
+}
+.account-details .content form .buttons-div {
+  display: flex;
+  justify-content: space-between;
+}
+.account-details .content form .buttons-div .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-profile {
+  display: flex;
+  border-left: 1px solid #ccc; /* Grå högerkant */
+  margin-bottom: 500px; /* Flytta upp sektionen med en margin */
+}
+.account-profile .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.account-profile .profile .profile-image {
+  margin-bottom: 10px;
+}
+.account-profile .profile .profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.account-profile .profile .profile-image .btn-circle {
+  margin-top: 10px;
+  background-color: #6366F1;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.account-profile .profile .profile-info {
+  text-align: center;
+}
+.account-profile .profile .profile-info h3.displayname {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.account-profile .profile .profile-info p {
+  margin-bottom: 0;
+  color: #6366F1;
+}
+.account-profile .content {
+  flex: 1;
+  padding: 20px;
+  /* Här kan du inkludera den tidigare SCSS-koden för formuläret */
+}
+.account-profile .content form {
+  /* ... */
 }
 
 .app-download {
