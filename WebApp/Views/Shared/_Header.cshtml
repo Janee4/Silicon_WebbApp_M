@@ -10,7 +10,7 @@
             <nav class="nav-bar">
                 <a asp-action="Home" asp-controller="Default" asp-fragment="showcase">Overview</a>
                 <a asp-action="Home" asp-controller="Default" asp-fragment="showcase">Features</a>
-                @if(SignInManager.IsSignedIn(User)) 
+                @if (SignInManager.IsSignedIn(User))
                 {
                     <a asp-action="Index" asp-controller="Courses">Courses</a>
                 }
@@ -29,7 +29,7 @@
                 <i class="fa-regular fa-moon"></i>
             </div>
             <div class="account-buttons">
-                
+
                 @if (SignInManager.IsSignedIn(User))
                 {
                     if (user != null && !string.IsNullOrEmpty(user.ProfileImage))
@@ -46,10 +46,10 @@
                 else
                 {
 
-                        <a class="sign-in-btn" asp-action="SignIn" asp-controller="Auth"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
+                    <a class="sign-in-btn" asp-action="SignIn" asp-controller="Auth"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
 
 
-                        <a class="sign-up-btn" asp-action="SignUp" asp-controller="Auth"><i class="fa-regular fa-user"></i>Sign up</a>
+                    <a class="sign-up-btn" asp-action="SignUp" asp-controller="Auth"><i class="fa-regular fa-user"></i>Sign up</a>
 
                 }
             </div>

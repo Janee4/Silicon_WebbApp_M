@@ -25,6 +25,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.account-details {
+  margin-left: 400px;
+  margin-top: 10px;
+}
 .account-details .container {
   display: flex;
   /* Basic Styles */
@@ -79,7 +83,7 @@ a:hover {
   margin-right: 50px;
 }
 .account-details .container .bio {
-  height: 100px;
+  height: 400px;
   text-align: left;
 }
 .account-details .container .bio::placeholder {
@@ -196,6 +200,42 @@ a:hover {
   align-items: center;
   padding: 20px;
 }
+.account-profile .profile .btn-theme-s {
+  margin-top: 25px;
+  background: #6366F1;
+  color: #FFFFFF;
+  padding: 13px 100px 12px 20px;
+  margin-right: -80px;
+  margin-left: -170px;
+  font-size: 14px;
+}
+.account-profile .profile .btn-theme-s:hover {
+  text-decoration: none;
+  background: #565973;
+  color: #FFFFFF;
+}
+.account-profile .profile .btn-grayy {
+  background: white;
+  color: #33354D;
+  border: none;
+  padding: 13px 100px 12px 10px;
+  margin-top: 10px;
+  margin-right: -80px;
+  margin-left: -215px;
+  color: rgba(0, 0, 0, 0.8549019608);
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.account-profile .profile .btn-grayy i {
+  margin-right: 10px;
+  color: grey;
+}
+.account-profile .profile .btn-grayy:hover {
+  text-decoration: none;
+  background: #565973;
+  color: #FFFFFF;
+}
 .account-profile .profile .profile-image {
   margin-bottom: 10px;
 }
@@ -217,11 +257,16 @@ a:hover {
 }
 .account-profile .profile .profile-info h3.displayname {
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 16px;
+  color: #0B0F19;
+  line-height: 160%;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
 }
 .account-profile .profile .profile-info p {
   margin-bottom: 0;
-  color: #6366F1;
+  color: #0B0F19;
 }
 .account-profile .content {
   display: flex;
