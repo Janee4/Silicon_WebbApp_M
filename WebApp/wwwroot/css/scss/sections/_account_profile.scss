@@ -1,7 +1,6 @@
 ﻿.account-profile {
     display: flex;
-    border-right: 1px solid #ccc; /* Grå högerkant */
-    margin-bottom: 500px; /* Flytta upp sektionen med en margin */
+    margin-top: 0; /* Flytta upp sektionen med en margin */
 
     .profile {
         display: flex;
@@ -44,6 +43,7 @@
     }
 
     .content {
+        display:flex;
         flex: 1;
         padding: 20px;
         /* Här kan du inkludera den tidigare SCSS-koden för formuläret */

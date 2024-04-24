@@ -25,83 +25,170 @@ a:hover {
   text-decoration: underline;
 }
 
-.account-details {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 100px;
-}
 .account-details .container {
   display: flex;
-  align-items: center;
+  /* Basic Styles */
 }
-.account-details .container img {
-  margin-right: 20px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* Gör bilden rund */
+.account-details .container .form-container {
+  flex: 1; /* För att fylla resten av utrymmet */
+  margin-bottom: 100px; /* Lägg till lite utrymme under "Bio (optional)" -fältet */
+  margin-left: 0px;
 }
-.account-details .container h5 {
-  margin-bottom: 5px;
-  font-size: 24px;
-}
-.account-details .container p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #6366F1;
-}
-.account-details .container .btn {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-.account-details .content {
+.account-details .container form {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.account-details .content form {
   max-width: 500px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  padding-right: 20px; /* Justera höger padding för att flytta formuläret mot vänster */
+  border-left: 1px solid #ccc; /* Lägger till en vänsterkant för att skapa en linje mellan "profile" och formuläret */
+  margin-left: 0px; /* Lägger till lite utrymme mellan linjen och formuläret */
+  padding-left: 100px;
+  flex: 10 10 10%;
 }
-.account-details .content form h3, .account-details .content form h5 {
+.account-details .container form h3 {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: #0B0F19;
+  font-size: 28px !important;
+}
+.account-details .container form h5 {
   color: #6366F1;
-  margin-bottom: 15px;
+  line-height: 160%;
+  font-weight: 400;
+  color: #6366F1;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 20px !important;
 }
-.account-details .content form .form-content {
-  /* Anpassa första och sista raden */
-}
-.account-details .content form .form-content .input-group {
+.account-details .container .form-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Justera vertikalt centrerad innehåll */
   margin-bottom: 20px;
 }
-.account-details .content form .form-content .input-group label {
-  flex: 1;
-  margin-right: 20px;
+.account-details .container .form-row .form-group-2 {
+  flex: none; /* Avbryter flex-grow, flex-shrink, och flex-basis */
+  flex-basis: calc(47% - 5px); /* Ställer in bredden på formgrupperna med mellanrum */
+  margin-right: 50px;
 }
-.account-details .content form .form-content .input-group input, .account-details .content form .form-content .input-group textarea {
-  flex: 2;
+.account-details .container .form-group {
+  flex: none; /* Avbryter flex-grow, flex-shrink, och flex-basis */
+  flex-basis: calc(100% - 5px); /* Ställer in bredden på formgrupperna med mellanrum */
+  margin-right: 50px;
 }
-.account-details .content form .form-content .input-group:first-child, .account-details .content form .form-content .input-group:nth-child(2) {
-  flex-direction: row; /* Låt fälten ligga bredvid varandra */
+.account-details .container .bio {
+  height: 100px;
+  text-align: left;
 }
-.account-details .content form .form-content .input-group:first-child label, .account-details .content form .form-content .input-group:first-child input, .account-details .content form .form-content .input-group:first-child textarea, .account-details .content form .form-content .input-group:nth-child(2) label, .account-details .content form .form-content .input-group:nth-child(2) input, .account-details .content form .form-content .input-group:nth-child(2) textarea {
-  flex: 1; /* Ge varje element lika mycket utrymme */
+.account-details .container .bio::placeholder {
+  text-align: left; /* Placera placeholder-texten till vänster */
 }
-.account-details .content form .buttons-div {
+.account-details .container .bio-div {
+  width: 800px;
+}
+.account-details .container .bio-div input {
+  padding-bottom: 90px;
+}
+.account-details .container .buttons-div {
   display: flex;
-  justify-content: space-between;
 }
-.account-details .content form .buttons-div .btn {
+.account-details .container .btn-cancel {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #EFF2FC;
+  color: #33354D;
+  border: none;
+  margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+.account-details .container .btn-save-changes {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+  background: #6366F1;
+  color: #FFFFFF;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+.account-details .container label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 600;
+}
+.account-details .container input,
+.account-details .container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.account-details .container button {
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 20px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.account-details .container button:hover {
+  background-color: #0056b3;
+}
+.account-details .container body {
+  font-family: Arial, sans-serif;
+}
+.account-details .container .form-2 {
+  width: 800px;
+}
+.account-details .container .form-2 .form-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.account-details .container .form-2 .form-group {
+  flex: none; /* Avbryter flex-grow, flex-shrink, och flex-basis */
+  flex-basis: calc(100% - 5px); /* Ställer in bredden på formgrupperna med mellanrum */
+  margin-right: 50px;
+}
+.account-details .container .form-2 .bio-div {
+  width: 800px;
+  margin-bottom: 20px;
+}
+.account-details .container .form-2 h5 {
+  margin-top: 50px;
+  color: #6366F1;
+  position: relative; /* Gör positionen relativ till h5-elementet */
+  padding-top: 20px; /* Lägg till lite padding för att ge utrymme mellan gränsen och texten */
+}
+.account-details .container .form-2 h5::before {
+  content: ""; /* Skapar ett pseudoelement */
+  position: absolute; /* Gör positionen absolut för att kunna placera det exakt */
+  top: 0; /* Placera det i början av h5-elementet */
+  left: 0; /* Placera det längst till vänster */
+  width: 100%; /* Låt bredden sträcka sig över hela bredden av h5-elementet */
+  border-top: solid 1px #ccc; /* Applicera gränsen */
 }
 
 .account-profile {
   display: flex;
-  border-left: 1px solid #ccc; /* Grå högerkant */
-  margin-bottom: 500px; /* Flytta upp sektionen med en margin */
+  margin-top: 0; /* Flytta upp sektionen med en margin */
 }
 .account-profile .profile {
   display: flex;
@@ -137,6 +224,7 @@ a:hover {
   color: #6366F1;
 }
 .account-profile .content {
+  display: flex;
   flex: 1;
   padding: 20px;
   /* Här kan du inkludera den tidigare SCSS-koden för formuläret */
