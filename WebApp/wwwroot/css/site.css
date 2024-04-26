@@ -287,6 +287,79 @@ a:hover {
   /* ... */
 }
 
+/* Base styles */
+.courses .container {
+  /* Container styles */
+}
+.courses h1 {
+  /* Heading styles */
+}
+.courses form#form-filters {
+  /* Form styles */
+}
+.courses form#form-filters select {
+  /* Select styles */
+}
+.courses form#form-filters .input-search-group {
+  /* Search input group styles */
+}
+.courses form#form-filters .input-search-group input#searchQuery {
+  /* Search input styles */
+}
+.courses form#form-filters .input-search-group i.fa-regular.fa-search {
+  /* Search icon styles */
+}
+.courses .course-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: 3, 1fr;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+.courses .course-items .course {
+  width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
+  margin-bottom: 20px; /* Justera marginalen mellan kurser */
+}
+.courses .course-items .course .bestseller {
+  /* Bestseller badge styles */
+}
+.courses .course-items .course .btn.btn-circle.bookmark {
+  /* Bookmark button styles */
+}
+.courses .course-items .course img {
+  /* Image styles */
+}
+.courses .course-items .course .content {
+  /* Content container styles */
+}
+.courses .course-items .course .content .title {
+  font-size: 16;
+  color: black;
+  font-weight: 700;
+}
+.courses .course-items .course .content .author {
+  /* Author styles */
+}
+.courses .course-items .course .content .pricing {
+  /* Pricing container styles */
+}
+.courses .course-items .course .content .pricing .discount {
+  /* Discount price styles */
+}
+.courses .course-items .course .content .pricing .price {
+  /* Price styles */
+}
+.courses .course-items .course .content .footer {
+  /* Footer styles */
+}
+.courses .course-items .course .content .footer .hours {
+  /* Hours styles */
+}
+.courses .course-items .course .content .footer .likes {
+  /* Likes styles */
+}
+
 .app-download {
   background-color: #F3F6FF;
 }

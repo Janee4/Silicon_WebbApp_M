@@ -1,6 +1,95 @@
-﻿namespace WebApp.wwwroot.css.scss.sections
-{
-    public class _courses
-    {
+﻿/* Base styles */
+.courses {
+
+    .container {
+        /* Container styles */
+    }
+
+    h1 {
+        /* Heading styles */
+    }
+
+    form#form-filters {
+        /* Form styles */
+
+        select {
+            /* Select styles */
+        }
+
+        .input-search-group {
+            /* Search input group styles */
+
+            input#searchQuery {
+                /* Search input styles */
+            }
+
+            i.fa-regular.fa-search {
+                /* Search icon styles */
+            }
+        }
+    }
+
+    .course-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-template-columns: (3, 1fr);
+        margin-right: 10rem;
+        margin-left: 10rem;
+
+        .course {
+            width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
+            margin-bottom: 20px; /* Justera marginalen mellan kurser */
+
+            .bestseller {
+                /* Bestseller badge styles */
+            }
+
+            .btn.btn-circle.bookmark {
+                /* Bookmark button styles */
+            }
+
+            img {
+                /* Image styles */
+            }
+
+            .content {
+                /* Content container styles */
+
+                .title {
+                    font-size: 16;
+                    color: black;
+                    font-weight: 700;
+                }
+
+                .author {
+                    /* Author styles */
+                }
+
+                .pricing {
+                    /* Pricing container styles */
+
+                    .discount {
+                        /* Discount price styles */
+                    }
+
+                    .price {
+                        /* Price styles */
+                    }
+                }
+
+                .footer {
+                    /* Footer styles */
+
+                    .hours {
+                        /* Hours styles */
+                    }
+
+                    .likes {
+                        /* Likes styles */
+                    }
+                }
+            }
+        }
     }
 }
