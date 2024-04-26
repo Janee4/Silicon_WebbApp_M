@@ -18,7 +18,7 @@ public class CoursesController(HttpClient httpClient) : Controller
         var viewModel = new CourseIndexViewModel();
 
 
-        var response = await _httpClient.GetAsync("https://localhost:7116/api/courses");
+        var response = await _httpClient.GetAsync("https://localhost:7276/api/Courses");
         if (response.IsSuccessStatusCode)
         {
             var courses = JsonConvert.DeserializeObject<IEnumerable<CourseViewModel>>(await response.Content.ReadAsStringAsync());
