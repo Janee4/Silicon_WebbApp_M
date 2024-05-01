@@ -328,9 +328,16 @@ a:hover {
 .courses .course-items .course {
   width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
   margin-bottom: 20px; /* Justera marginalen mellan kurser */
+  position: relative;
 }
 .courses .course-items .course .bestseller {
-  /* Bestseller badge styles */
+  position: absolute;
+  background-color: #22C55E;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: white;
+  left: 25px;
+  top: 10px;
 }
 .courses .course-items .course .btn.btn-circle.bookmark {
   /* Bookmark button styles */
