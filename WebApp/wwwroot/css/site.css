@@ -335,19 +335,31 @@ a:hover {
   object-fit: cover;
 }
 .courses .course-items .course .content {
-  margin-left: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid #ccc; /* Lägg till en solid grå kant runt innehållet */
+  border-top: none; /* Ta bort toppkanten för att undvika dubbel kant med bilden */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 375px;
 }
 .courses .course-items .course .content .title {
-  font-size: 16;
   color: black;
   font-weight: 700;
-  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 19px;
 }
 .courses .course-items .course .content .author {
-  /* Author styles */
+  color: #565973;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .courses .course-items .course .content .pricing {
-  /* Pricing container styles */
+  color: #6366F1;
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 .courses .course-items .course .content .pricing .discount {
   /* Discount price styles */
@@ -359,7 +371,7 @@ a:hover {
   /* Footer styles */
 }
 .courses .course-items .course .content .footer .hours {
-  /* Hours styles */
+  padding-top: 10px;
 }
 .courses .course-items .course .content .footer .likes {
   /* Likes styles */
