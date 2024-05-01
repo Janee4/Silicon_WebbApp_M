@@ -97,14 +97,18 @@
                 }
 
                 .footer {
-                    /* Footer styles */
+                    display: flex; /* Använd flexbox för att placera "hours" och "likes" bredvid varandra */
+                    align-items: center;
+                    gap: 20px;
 
                     .hours {
-                       padding-top: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: #9397AD;
                     }
 
                     .likes {
-                        /* Likes styles */
+                        color: #9397AD;
                     }
                 }
             }
