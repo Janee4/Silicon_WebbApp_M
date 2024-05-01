@@ -328,15 +328,20 @@ a:hover {
   /* Bookmark button styles */
 }
 .courses .course-items .course img {
-  /* Image styles */
+  max-width: 100%; /* Begräns bildens bredd till 100% av dess förälders bredd */
+  height: auto; /* Tillåt bildens höjd att justeras automatiskt för att behålla proportioner */
+  max-height: 180px; /* Begräns maxhöjden på bilderna till 150px */
+  width: 360px;
+  object-fit: cover;
 }
 .courses .course-items .course .content {
-  /* Content container styles */
+  margin-left: 40px;
 }
 .courses .course-items .course .content .title {
   font-size: 16;
   color: black;
   font-weight: 700;
+  margin-top: 20px;
 }
 .courses .course-items .course .content .author {
   /* Author styles */
