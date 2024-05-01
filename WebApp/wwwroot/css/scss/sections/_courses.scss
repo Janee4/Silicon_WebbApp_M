@@ -2,29 +2,44 @@
 .courses {
 
     .container {
-        /* Container styles */
     }
 
+    .title-form-div {
+        display: flex;
+        align-items: center;
+        margin-left: 170px;
+    }
+
+
     h1 {
-        /* Heading styles */
+        color: #0B0F19;
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    .categories-to-right {
+        margin-left: 1235px;
     }
 
     form#form-filters {
-        /* Form styles */
+        display: flex; /* Använd flexbox för att rada elementen bredvid varandra */
+        align-items: center; /* Centrera vertikalt */
+        margin-bottom: 20px; /* Lägg till lite marginal under formuläret */
 
         select {
-            /* Select styles */
+            margin-right: 20px;
         }
 
         .input-search-group {
-            /* Search input group styles */
+            position: relative;
 
             input#searchQuery {
-                /* Search input styles */
             }
 
             i.fa-regular.fa-search {
-                /* Search icon styles */
+                position: absolute;
+                right: 20px;
+                top: 5px;
             }
         }
     }
@@ -34,8 +49,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         grid-template-columns: (3, 1fr);
-        margin-right: 10rem;
-        margin-left: 10rem;
+        margin-right: 550px;
+        margin-left: 550px;
 
         .course {
             width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
@@ -92,7 +107,8 @@
                     }
 
                     .price {
-                        /* Price styles */
+                        font-size: 17px;
+                        font-weight: bold;
                     }
                 }
 

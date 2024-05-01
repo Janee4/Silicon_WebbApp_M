@@ -288,34 +288,42 @@ a:hover {
 }
 
 /* Base styles */
-.courses .container {
-  /* Container styles */
+.courses .title-form-div {
+  display: flex;
+  align-items: center;
+  margin-left: 170px;
 }
 .courses h1 {
-  /* Heading styles */
+  color: #0B0F19;
+  font-size: 32px;
+  font-weight: 800;
+}
+.courses .categories-to-right {
+  margin-left: 1235px;
 }
 .courses form#form-filters {
-  /* Form styles */
+  display: flex; /* Använd flexbox för att rada elementen bredvid varandra */
+  align-items: center; /* Centrera vertikalt */
+  margin-bottom: 20px; /* Lägg till lite marginal under formuläret */
 }
 .courses form#form-filters select {
-  /* Select styles */
+  margin-right: 20px;
 }
 .courses form#form-filters .input-search-group {
-  /* Search input group styles */
-}
-.courses form#form-filters .input-search-group input#searchQuery {
-  /* Search input styles */
+  position: relative;
 }
 .courses form#form-filters .input-search-group i.fa-regular.fa-search {
-  /* Search icon styles */
+  position: absolute;
+  right: 20px;
+  top: 5px;
 }
 .courses .course-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   grid-template-columns: 3, 1fr;
-  margin-right: 10rem;
-  margin-left: 10rem;
+  margin-right: 550px;
+  margin-left: 550px;
 }
 .courses .course-items .course {
   width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
@@ -365,7 +373,8 @@ a:hover {
   /* Discount price styles */
 }
 .courses .course-items .course .content .pricing .price {
-  /* Price styles */
+  font-size: 17px;
+  font-weight: bold;
 }
 .courses .course-items .course .content .footer {
   display: flex; /* Använd flexbox för att placera "hours" och "likes" bredvid varandra */
