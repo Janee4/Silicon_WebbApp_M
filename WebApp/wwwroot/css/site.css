@@ -288,48 +288,48 @@ a:hover {
 }
 
 /* Base styles */
-.courses .title-form-div {
+.courses .container .title-form-div {
   display: flex;
   align-items: center;
   margin-left: 170px;
   margin-top: 100px;
   margin-bottom: 30px;
 }
-.courses h1 {
+.courses .container h1 {
   color: #0B0F19;
   font-size: 40px;
   font-weight: 900;
   margin-left: 380px;
 }
-.courses .categories-to-right {
+.courses .container .categories-to-right {
   margin-left: 501px;
 }
-.courses form#form-filters {
+.courses .container form#form-filters {
   display: flex; /* Använd flexbox för att rada elementen bredvid varandra */
   align-items: center; /* Centrera vertikalt */
   margin-bottom: 20px; /* Lägg till lite marginal under formuläret */
 }
-.courses form#form-filters select {
+.courses .container form#form-filters select {
   margin-right: 20px;
   padding: 10px 80px 10px 20px;
   border-color: #D4D7E5;
   border-radius: 6px;
   color: #565973;
 }
-.courses form#form-filters .input-search-group {
+.courses .container form#form-filters .input-search-group {
   position: relative;
 }
-.courses form#form-filters .input-search-group input#searchQuery {
+.courses .container form#form-filters .input-search-group input#searchQuery {
   border-color: #E2E5F1;
   border-radius: 6px;
   padding: 10px 60px 10px 20px;
 }
-.courses form#form-filters .input-search-group i.fa-regular.fa-search {
+.courses .container form#form-filters .input-search-group i.fa-regular.fa-search {
   position: absolute;
   right: 20px;
   top: 15px;
 }
-.courses .course-items {
+.courses .container .course-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -337,12 +337,12 @@ a:hover {
   margin-right: 550px;
   margin-left: 550px;
 }
-.courses .course-items .course {
+.courses .container .course-items .course {
   width: calc(33.33% - 10px); /* Anpassa bredden för varje kurs */
   margin-bottom: 20px; /* Justera marginalen mellan kurser */
   position: relative;
 }
-.courses .course-items .course .bestseller {
+.courses .container .course-items .course .bestseller {
   position: absolute;
   background-color: #22C55E;
   padding: 2px 5px;
@@ -351,7 +351,7 @@ a:hover {
   left: 25px;
   top: 10px;
 }
-.courses .course-items .course .btn.btn-circle.bookmark {
+.courses .container .course-items .course .btn.btn-circle.bookmark {
   position: absolute;
   left: 300px;
   top: 19px;
@@ -361,14 +361,14 @@ a:hover {
   color: #33354D;
   cursor: pointer;
 }
-.courses .course-items .course img {
+.courses .container .course-items .course img {
   max-width: 100%; /* Begräns bildens bredd till 100% av dess förälders bredd */
   height: auto; /* Tillåt bildens höjd att justeras automatiskt för att behålla proportioner */
   max-height: 180px; /* Begräns maxhöjden på bilderna till 150px */
   width: 360px;
   object-fit: cover;
 }
-.courses .course-items .course .content {
+.courses .container .course-items .course .content {
   padding-left: 35px;
   padding-right: 35px;
   border: 1px solid #ccc; /* Lägg till en solid grå kant runt innehållet */
@@ -376,44 +376,62 @@ a:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 375px;
 }
-.courses .course-items .course .content .title {
+.courses .container .course-items .course .content .title {
   color: black;
   font-weight: 700;
   padding-top: 20px;
   font-size: 19px;
 }
-.courses .course-items .course .content .author {
+.courses .container .course-items .course .content .author {
   color: #565973;
   font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.courses .course-items .course .content .pricing {
+.courses .container .course-items .course .content .pricing {
   color: #6366F1;
   font-weight: 700;
   font-size: 16px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
-.courses .course-items .course .content .pricing .discount {
+.courses .container .course-items .course .content .pricing .discount {
   /* Discount price styles */
 }
-.courses .course-items .course .content .pricing .price {
+.courses .container .course-items .course .content .pricing .price {
   font-size: 17px;
   font-weight: bold;
 }
-.courses .course-items .course .content .footer {
+.courses .container .course-items .course .content .footer {
   display: flex; /* Använd flexbox för att placera "hours" och "likes" bredvid varandra */
   align-items: center;
   gap: 20px;
 }
-.courses .course-items .course .content .footer .hours {
+.courses .container .course-items .course .content .footer .hours {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #9397AD;
 }
-.courses .course-items .course .content .footer .likes {
+.courses .container .course-items .course .content .footer .likes {
   color: #9397AD;
+}
+.courses .container .work-with-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.courses .container .work-with-us .left-side {
+  flex: 1;
+  margin-right: 20px;
+}
+.courses .container .work-with-us .left-side h5 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+.courses .container .work-with-us .right-side img {
+  max-width: 100%;
+  height: auto;
 }
 
 .app-download {
